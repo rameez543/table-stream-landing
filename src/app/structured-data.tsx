@@ -61,6 +61,64 @@ export default function StructuredData() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What file sizes can TableStream.io handle?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TableStream.io can handle CSV files up to 4GB+ with millions of rows. All processing happens in your browser using DuckDB WebAssembly for maximum performance."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is my data uploaded to any servers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No, your data never leaves your browser. TableStream.io processes everything client-side using WebAssembly, ensuring complete privacy and security of your sensitive data."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What export formats are supported?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TableStream.io supports exporting to CSV, JSON, and Excel formats. You can export filtered results or the entire dataset."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I use SQL queries with TableStream.io?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, TableStream.io is powered by DuckDB WebAssembly, allowing you to run SQL queries directly on your CSV data for advanced filtering and analysis."
+        }
+      }
+    ]
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://tablestream.io"
+      },
+      {
+        "@type": "ListItem", 
+        "position": 2,
+        "name": "CSV Analysis Tool",
+        "item": "https://tablestream.io"
+      }
+    ]
+  };
+
   return (
     <>
       <script
@@ -74,6 +132,14 @@ export default function StructuredData() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareApplicationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
     </>
   );
