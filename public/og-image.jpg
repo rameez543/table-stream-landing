@@ -1,0 +1,10 @@
+I need to save the image you provided. However, I cannot directly save the image from your message. Could you please save the image file as `/Users/rameez/Desktop/table-stream-landing/public/og-image.jpg` manually, or provide the image file in a format I can process?
+
+Once you've saved the image, the metadata is already correctly configured to reference it at:
+- `https://tablestream.io/og-image.jpg` for Open Graph
+- `https://tablestream.io/og-image.jpg` for Twitter cards
+
+The image should be:
+- Exactly 1200x630 pixels for optimal social media display
+- Named `og-image.jpg`
+- Placed in the `/public/` directory
