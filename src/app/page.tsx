@@ -223,7 +223,7 @@ export default function Home() {
               </div>
               <div className="text-xl font-medium group-hover:text-orange-600 transition-colors">No tracking</div>
               <div className="text-zinc-600 dark:text-zinc-400 leading-relaxed">
-                We don't collect any usage data
+                We don&apos;t collect any usage data
               </div>
             </div>
             
