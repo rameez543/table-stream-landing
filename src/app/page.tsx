@@ -262,11 +262,9 @@ export default function Home() {
       <footer className="py-16 px-6 border-t border-zinc-200 dark:border-zinc-800">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
           <div className="font-medium text-lg">TableStream</div>
-          <div className="flex gap-8 text-sm text-zinc-600 dark:text-zinc-400">
-            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Privacy</a>
-            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Terms</a>
-            <a href="#" className="hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">Contact</a>
-          </div>
+          <a href="mailto:hello@tablestream.io" className="text-sm text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-zinc-100 transition-colors">
+            Questions or feedback? hello@tablestream.io
+          </a>
         </div>
         <div className="max-w-6xl mx-auto pt-8 mt-8 border-t border-zinc-200 dark:border-zinc-800 text-center text-sm text-zinc-600 dark:text-zinc-400">
           © 2025 TableStream.io
